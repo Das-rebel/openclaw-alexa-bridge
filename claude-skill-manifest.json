@@ -1,0 +1,136 @@
+{
+  "name": "TMLPD",
+  "displayName": "TreeQuest Multi-LLM Parallel Deployment",
+  "version": "1.0.0",
+  "description": "Accelerate development by deploying multiple AI agents in parallel across different LLM providers",
+  "author": "TMLPD Contributors",
+  "license": "MIT",
+  "repository": "https://github.com/Das-rebel/tmlpd-skill",
+  "tags": [
+    "parallel-processing",
+    "multi-llm",
+    "deployment",
+    "automation",
+    "treequest",
+    "development",
+    "ai-agents",
+    "productivity"
+  ],
+  "categories": [
+    "Development",
+    "Productivity",
+    "Automation"
+  ],
+  "minimumClaudeVersion": "1.0.0",
+  "skill": {
+    "file": "src/skills/TMLPD.md",
+    "shortcut": "TMLPD"
+  },
+  "dependencies": [
+    {
+      "name": "treequest-ai",
+      "version": ">=1.0.0",
+      "optional": false,
+      "description": "TreeQuest CLI for multi-LLM orchestration"
+    }
+  ],
+  "installation": {
+    "type": "manual",
+    "steps": [
+      {
+        "description": "Clone the repository",
+        "command": "git clone https://github.com/Das-rebel/tmlpd-skill.git"
+      },
+      {
+        "description": "Copy skill files to Claude skills directory",
+        "command": "cp -r src/skills/* ~/.claude/skills/"
+      },
+      {
+        "description": "Make test script executable",
+        "command": "chmod +x ~/.claude/skills/test-tmlpd.sh"
+      },
+      {
+        "description": "Verify installation",
+        "command": "~/.claude/skills/test-tmlpd.sh"
+      }
+    ]
+  },
+  "capabilities": [
+    "Deploy multiple AI agents in parallel",
+    "Execute tasks across different LLM providers",
+    "Coordinate agent synchronization",
+    "Optimize costs with budget limits",
+    "Monitor deployments in real-time",
+    "Auto-retry with exponential backoff",
+    "Checkpoint-based resume",
+    "Dynamic load balancing",
+    "Merge parallel outputs",
+    "Generate performance reports"
+  ],
+  "useCases": [
+    "Full-stack application development",
+    "Comprehensive testing suites",
+    "Documentation generation",
+    "Refactoring large codebases",
+    "Research and analysis",
+    "Multi-phase project execution"
+  ],
+  "providers": [
+    "anthropic",
+    "openai",
+    "google",
+    "perplexity",
+    "groq",
+    "cerebras"
+  ],
+  "examples": [
+    {
+      "name": "Full-Stack Development",
+      "description": "Parallel frontend and backend development",
+      "file": "examples/fullstack-development.yaml"
+    },
+    {
+      "name": "Testing Sprint",
+      "description": "Comprehensive parallel testing deployment",
+      "file": "examples/testing-sprint.yaml"
+    }
+  ],
+  "documentation": {
+    "main": "README.md",
+    "fullGuide": "src/skills/TMLPD.md",
+    "quickRef": "src/skills/TMLPD-QUICKREF.md",
+    "config": "docs/CONFIGURATION.md",
+    "contributing": "CONTRIBUTING.md",
+    "changelog": "CHANGELOG.md"
+  },
+  "support": {
+    "issues": "https://github.com/Das-rebel/tmlpd-skill/issues",
+    "discussions": "https://github.com/Das-rebel/tmlpd-skill/discussions"
+  },
+  "keywords": [
+    "parallel",
+    "multi-llm",
+    "treequest",
+    "deployment",
+    "automation",
+    "ai",
+    "agents",
+    "development",
+    "productivity",
+    "anthropic",
+    "openai",
+    "google",
+    "gemini",
+    "claude",
+    "gpt",
+    "cost-optimization",
+    "load-balancing"
+  ],
+  "performance": {
+    "speedup": "3-4x with 4 parallel agents",
+    "costEfficiency": "High (provider optimization)",
+    "scalability": "2-8 agents recommended"
+  },
+  "screenshots": [],
+  "videos": []
+}
