@@ -34,11 +34,8 @@
 
 ### Deployment Information
 - **Platform**: Google Cloud Functions Gen 2
-- **Region**: asia-south1
-- **URL**: `https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed`
-- **Health Check**: `/health` endpoint
-- **Version**: 2.0.0
-- **Active Revision**: quantum-claw-v2-fixed-00014-pem
+- **Runtime**: Node.js 22
+- **Version**: 2.2.0
 
 ### Primary Use Cases
 1. **Podcast & Content Summarization**: Multi-turn conversations about podcasts, videos, articles
@@ -58,13 +55,7 @@
 
 ## 🚀 Production Status
 
-**✅ LIVE IN PRODUCTION**
-
-**Deployed URL**: https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed
-
-**Active Revision**: quantum-claw-v2-fixed-00014-pem (Deployed: 2026-03-23)
-
-**Health Check**: https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed/health
+**✅ Production Ready**
 
 **Active Providers**:
 - ✅ GLMv2 (Claude Sonnet 4 via Z.ai) - Primary AI reasoning
@@ -1011,9 +1002,9 @@ curl http://localhost:3000/health
 **Google Cloud Functions (Recommended)**:
 ```bash
 # Deploy to Google Cloud Functions Gen 2
-gcloud functions deploy quantum-claw-v2-fixed \
+gcloud functions deploy your-function-name \
   --gen2 \
-  --region=asia-south1 \
+  --region=your-region \
   --runtime=nodejs22 \
   --source=. \
   --entry-point=alexaHandler \
@@ -1034,9 +1025,9 @@ cp -r src /tmp/quantum-deploy/
 
 # Deploy from minimal package
 cd /tmp/quantum-deploy
-gcloud functions deploy quantum-claw-v2-fixed \
+gcloud functions deploy your-function-name \
   --gen2 \
-  --region=asia-south1 \
+  --region=your-region \
   --runtime=nodejs22 \
   --entry-point=alexaHandler \
   --trigger=http \
@@ -1302,7 +1293,7 @@ mkdir -p /tmp/quantum-deploy
 cp cloud_fn_handler_v2.js package.json /tmp/quantum-deploy/
 cp -r src /tmp/quantum-deploy/
 cd /tmp/quantum-deploy
-gcloud functions deploy quantum-claw-v2-fixed --source=/tmp/quantum-deploy
+gcloud functions deploy your-function-name --source=/tmp/quantum-deploy
 ```
 
 ### Issue 4: "SpeechletResponse was null"
@@ -1350,8 +1341,6 @@ MIT License - see LICENSE file for details
 ## 🔗 Links
 
 - **GitHub Repository**: [https://github.com/Das-rebel/openclaw-alexa-bridge](https://github.com/Das-rebel/openclaw-alexa-bridge)
-- **Live Deployment**: [https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed](https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed)
-- **Health Check**: [/health](https://asia-south1-dauntless-glow-487412-s7.cloudfunctions.net/quantum-claw-v2-fixed/health)
 - **Alexa Developer Console**: [https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)
 - **Google Cloud Console**: [https://console.cloud.google.com/](https://console.cloud.google.com/)
 
