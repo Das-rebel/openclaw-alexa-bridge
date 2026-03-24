@@ -1,4 +1,4 @@
-# ⚡ Quantum Claw v2.2 - Multi-Provider AI Orchestration System
+# ⚡ Quantum Claw v2.2 - Multi-Provider AI Orchestration System based on Openclaw 
 
 ## 🎯 Context-Aware Voice Assistant | Multi-Language AI | Smart Routing | Alexa Skills | Serverless | Real-Time Search
 
